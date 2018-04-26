@@ -81,7 +81,7 @@ end)
 function chat(i)
     TriggerEvent('chatMessage', '', {255,255,255}, p.prefix .. p.messages[i] .. p.suffix)
 end
-RegisterCommand('automessage', function()
+RegisterCommand('pannounce', function()
     enableMessages = not enableMessages
     if enableMessages then
         status = '^2enabled^5.'
